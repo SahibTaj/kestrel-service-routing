@@ -1,0 +1,40 @@
+{
+  "train_rows": 10822,
+  "test_rows": 2178,
+  "unique_train_request_ids": 10822,
+  "unique_test_request_ids": 2178,
+  "train_test_id_overlap": 0,
+  "train_date_min": "2025-04-01 00:31",
+  "train_date_max": "2026-06-30 23:33",
+  "test_date_min": "2026-07-01 00:31",
+  "test_date_max": "2026-09-30 23:00",
+  "validation_train_rows": 9384,
+  "validation_rows": 1438,
+  "validation_accuracy": 0.935326842837274,
+  "validation_macro_f1": 0.9389002651623107,
+  "validation_weighted_f1": 0.9338590292997223,
+  "validation_error_count": 93,
+  "transferred_requests": 2696,
+  "transfer_rate": 0.24912215856588432,
+  "mean_transfers": 0.36056181851783403,
+  "team_label_equals_first_team_rate": 1.0,
+  "canonical_team_names": [
+    "Installations",
+    "Repairs",
+    "Consumables",
+    "Billing",
+    "Returns & Replacement",
+    "Warranty Claims",
+    "Product Advice"
+  ],
+  "label_alias_mapping": {
+    "Installs & Demo": "Installations",
+    "Filters & Consumables": "Consumables"
+  },
+  "model": "word + character TF-IDF; LinearSVC(C=1.0); metadata appended to request text",
+  "validation_protocol": "Chronological holdout: fit through 2026-04-30; validate 2026-05-01 through 2026-06-30",
+  "important_limit": "Validation measures agreement with historical initial queue labels, not correctness against independent ground-truth routing outcomes.",
+  "raw_model_validation_accuracy": 0.9631432545201669,
+  "policy_guardrail": "When the model predicts Consumables but explicit product-fault language appears, route to Repairs. This rule was evaluated on the same chronological holdout.",
+  "policy_override_validation_count": 47
+}

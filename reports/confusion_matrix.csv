@@ -1,0 +1,8 @@
+actual_team,Installations,Repairs,Consumables,Billing,Returns & Replacement,Warranty Claims,Product Advice
+Installations,147,2,0,0,0,0,0
+Repairs,1,407,3,4,0,4,2
+Consumables,2,48,155,0,0,2,1
+Billing,1,1,0,209,1,1,0
+Returns & Replacement,3,1,3,0,156,1,2
+Warranty Claims,2,0,0,0,2,126,1
+Product Advice,1,1,0,2,0,1,145

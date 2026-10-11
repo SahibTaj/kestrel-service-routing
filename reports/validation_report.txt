@@ -1,0 +1,19 @@
+Chronological validation: train through 2026-04-30; validate 2026-05-01 through 2026-06-30
+Train rows: 9384
+Validation rows: 1438
+Raw model accuracy: 96.3143%
+After policy guardrail accuracy: 93.5327%
+
+                       precision    recall  f1-score   support
+
+        Installations     0.9363    0.9866    0.9608       149
+              Repairs     0.8848    0.9667    0.9240       421
+          Consumables     0.9627    0.7452    0.8401       208
+              Billing     0.9721    0.9812    0.9766       213
+Returns & Replacement     0.9811    0.9398    0.9600       166
+      Warranty Claims     0.9333    0.9618    0.9474       131
+       Product Advice     0.9603    0.9667    0.9635       150
+
+             accuracy                         0.9353      1438
+            macro avg     0.9472    0.9354    0.9389      1438
+         weighted avg     0.9377    0.9353    0.9339      1438
